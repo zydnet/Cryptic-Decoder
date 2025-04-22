@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 30 20% 90%; /* Pastel Nude */
+    --foreground: 30 10% 30%; /* Darker Nude */
+    --card: 30 20% 90%; /* Pastel Nude */
+    --card-foreground: 30 10% 30%; /* Darker Nude */
+    --popover: 30 20% 90%; /* Pastel Nude */
+    --popover-foreground: 30 10% 30%; /* Darker Nude */
+    --primary: 120 30% 70%; /* Pastel Green */
+    --primary-foreground: 30 10% 30%; /* Darker Nude */
+    --secondary: 220 20% 70%; /* Pastel Blue */
+    --secondary-foreground: 30 10% 30%; /* Darker Nude */
+    --muted: 30 15% 80%; /* Muted Nude */
+    --muted-foreground: 30 10% 50%; /* Light Grayish Nude */
+    --accent: 220 30% 80%; /* Slightly Lighter Blue */
+    --accent-foreground: 30 10% 30%; /* Darker Nude */
+    --destructive: 0 60% 70%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 10% 60%; /* Medium Grayish Nude */
+    --input: 30 10% 60%; /* Medium Grayish Nude */
+    --ring: 120 30% 70%; /* Pastel Green */
+    --chart-1: 12 50% 60%;
+    --chart-2: 173 40% 50%;
+    --chart-3: 197 30% 40%;
+    --chart-4: 43 50% 60%;
+    --chart-5: 27 60% 60%;
+    --radius: 0.5rem;
+    --sidebar-background: 30 20% 90%; /* Pastel Nude */
+    --sidebar-foreground: 30 10% 30%; /* Darker Nude */
+    --sidebar-primary: 120 30% 70%; /* Pastel Green */
+    --sidebar-primary-foreground: 30 10% 30%; /* Darker Nude */
+    --sidebar-accent: 220 20% 70%; /* Pastel Blue */
+    --sidebar-accent-foreground: 30 10% 30%; /* Darker Nude */
+    --sidebar-border: 30 10% 60%; /* Medium Grayish Nude */
+    --sidebar-ring: 120 30% 70%; /* Pastel Green */
+  }
+  .dark {
+    --background: 30 10% 20%; /* Charcoal Gray */
+    --foreground: 0 0% 98%; /* Off-White */
+    --card: 30 10% 20%; /* Charcoal Gray */
+    --card-foreground: 0 0% 98%; /* Off-White */
+    --popover: 30 10% 20%; /* Charcoal Gray */
+    --popover-foreground: 0 0% 98%; /* Off-White */
+    --primary: 120 40% 30%; /* Neon Green */
+    --primary-foreground: 30 10% 20%; /* Charcoal Gray */
+    --secondary: 220 30% 30%; /* Dark Blue */
+    --secondary-foreground: 0 0% 98%; /* Off-White */
+    --muted: 220 30% 30%; /* Muted Gray */
+    --muted-foreground: 220 20% 60%; /* Light Gray */
+    --accent: 220 30% 40%; /* Slightly Lighter Blue */
+    --accent-foreground: 0 0% 98%; /* Off-White */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 10% 40%; /* Darker Gray */
+    --input: 220 10% 40%; /* Darker Gray */
+    --ring: 120 40% 30%; /* Neon Green */
+    --chart-1: 220 50% 50%;
+    --chart-2: 160 40% 45%;
+    --chart-3: 30 60% 55%;
+    --chart-4: 280 45% 60%;
+    --chart-5: 340 55% 55%;
+    --sidebar-background: 30 10% 20%; /* Charcoal Gray */
+    --sidebar-foreground: 0 0% 98%; /* Off-White */
+    --sidebar-primary: 120 40% 30%; /* Neon Green */
+    --sidebar-primary-foreground: 30 10% 20%; /* Charcoal Gray */
+    --sidebar-accent: 220 30% 30%; /* Dark Blue */
+    --sidebar-accent-foreground: 0 0% 98%; /* Off-White */
+    --sidebar-border: 220 10% 40%; /* Darker Gray */
+    --sidebar-ring: 120 40% 30%; /* Neon Green */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
